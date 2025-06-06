@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admalstar Trading - Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/imgs/admalstar.png" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/imgs/admalstar.png" alt="Admalstar Logo"
+                    style="height: 30px; margin-right: 10px; border-radius: 50%;" />
+                Admalstar Trading
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html">Reviews</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Browse our selection of premium automotive oils for every vehicle type and driving condition.</p>
+                <p style=" font-style: italic;">Prices are available in <a href="https://wa.me/c/918547372272"
+                        style="text-decoration: none;">Catalogue</a></p>
+
+                <div class="btn-group">
+                    <button id="btnOils" class="active">Automotive Oils</button>
+                    <button id="btnParts">Spare Parts</button>
+                </div>
+
+            </div>
+            <!-- Automotive Oils Section -->
+            <div id="oilsSection">
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="fully-synthetic">Fully Synthetic</button>
+                    <button class="filter-btn" data-filter="semi-synthetic">Semi Synthetic</button>
+                    <button class="filter-btn" data-filter="car">Car</button>
+                    <button class="filter-btn" data-filter="bike">Bike</button>
+                </div>
+                <!-- contents in exchanged info.txt -->
+                <div class="products-grid">
+                    <!-- Products will be dynamically inserted here by JavaScript -->
+                </div>
+
+            </div>
+            <!-- Spare Parts Section (initially hidden) -->
+            <div id="sparePartsSection" class="hidden">
+                <h2 class="section-title">Spare Parts</h2>
+                <center>
+                    <h3>Coming <span style="color: blue;">Soon ... !</span></h3>
+                </center>
+                <div class="products-grid">
+                    <!-- <div class="product-card">
+                        <div class="product-img"><img src="https://via.placeholder.com/300x200?text=Filter"
+                                alt="Spare Part" /></div>
+                        <div class="product-title">Oil Filter - Toyota</div>
+                        <div class="product-price">$14.99</div>
+                    </div> -->
+                    <!-- Add more spare parts here -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- separation between oroducts -->
+    <div class="pagination-controls" id="productPagination">
+        <button id="prevPage" title="Previous Page"><i class="fas fa-chevron-left"></i></button>
+        <span id="pageIndicator">Page 1</span>
+        <button id="nextPage" title="Next Page"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Admalstar Trading</h3>
+                    <p>Premium automotive oils engineered for performance and protection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/message/RGJRZK4QPUDJB1"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/admalstar_trading/profilecard/?igsh=eTA2ejJlMWpmNHV0"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="https://wa.me/c/918547372272">Catalogue</a></li>
+                        <li><a href="#" id="faqLink">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Location <br> <span style="font-weight: bold;">Main
+                                Office : </span>Admalstar Trading Pvt. Ltd. <br>Kundara , Kollam ,Kerala <br><span
+                                style="font-weight: bold;">Branch Office : </span> <a
+                                href="https://maps.app.goo.gl/4DhDWJ7MAspQbsz37?g_st=aw" target="_blank">Admalstar
+                                Trading Pvt. Ltd. <br> Bharanicavu, Kattanam, Alapuzha Kerala</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel: +918547372272">+91 8547372272</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:admalstartrading@gmail.com">
+                                admalstartrading@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Admalstar Trading. All Rights Reserved.</p>
+                <p style="font-size: 12px;" class="footer-bottom">Designed By : <span
+                        style="color: whitesmoke; font-family: cursive;">M3N7OR with 🤍</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="faqModal" class="faq-modal">
+        <div class="faq-modal-content">
+            <span class="faq-close">&times;</span>
+            <h2>IDEMTSU Engine Oil Guidelines</h2>
+            <ul class="faq-list">
+                <li><strong>What is IRG and IFG ? </strong><br>The <strong>IRG series</strong>,Engine oils used for
+                    motorcycles<br><strong>
+                        <p>Series available:</p>
+                    </strong> IRG 7, IRG 5, IRG 3.<br>The <strong>IFG series</strong>,engine oils are used for Cars
+                    <br><strong>
+                        <p>Series available:
+                    </strong><br>IFG 7 & IFG 5</p>
+                </li>
+                <li><strong>Use Recommended Oil Grades:</strong> Follow engine-specific oil ratings like 10W-30, 15W-50.
+                </li>
+
+                <li><strong>Follow Industry Standards:</strong> Look for API SN and JASO MA/MB classifications.</li>
+                <li><strong>Storage Matters:</strong> Keep lubricants in cool, sealed places, away from direct sunlight.
+                </li>
+                <li><strong>Do Not Mix Oils:</strong> Avoid blending synthetic and mineral oils unless approved.</li>
+                <li><strong>Disposal:</strong> Take used oils to authorized recycling centers.</li>
+                <li><strong>Maintenance:</strong> Refer to your vehicle’s manual for service intervals.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/dynamic.js"></script>
+</body>
+
+</html>
