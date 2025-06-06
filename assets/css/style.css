@@ -774,6 +774,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo{
+        font-size: 18px;
+    }
+
     .header-container {
         flex-direction: column;
         text-align: center;
